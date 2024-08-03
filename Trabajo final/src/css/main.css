@@ -1,0 +1,293 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+
+}
+
+/*         NAV BAR         */
+
+.show{
+    display: flex !important;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+}
+
+nav ul{ /*links de escritorio*/
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li > a{ /*Estilos para hipervinculos hijos - carro/login/fav */
+    display: block;
+    position: relative;
+    padding: 20px 15px 10px 15px;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li .link::before{ /*Efecto barra blanca abajo de los links*/
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+
+    background-color:black;
+}
+
+nav ul li .link:hover:before{ 
+    transform: scaleX(1);
+}
+
+nav .more{
+    display: none;
+}
+
+nav .menu{ /*Menu flotante oculto en el more cuando cambia resolucion*/
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    min-width: 200px;
+    margin-top: 54px;
+
+    background-color: black
+}
+
+nav .menu a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+nav .menu a:hover{
+    background-color: white;
+    color: black;
+}
+
+nav .mobil{ /*A partir de aca esta el estilo para el nav en modo mobil, se distingue por la clase .mobil*/
+    display: none;
+    width: 100%;
+}
+
+/*         HEADER/IMG         */
+
+header{
+    
+    background-image: url(../img/supermercado2.png);
+    background-size:cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+h2{
+    font-size: 24px;
+}
+
+.lorem-historia{
+    font-size: 16px;
+}
+
+/*         HISTORIA         */
+
+
+.bannerHistoria{
+    font-size: 1.4em;
+    text-align: center;
+    padding: 60px;
+    height: 91.3vh;
+    width: 32%;
+    position: absolute;
+    z-index: 100;
+    top: 53px;
+    left: 0px;
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.bannerHistoria2{
+
+    font-size: 1.4em;
+    text-align: center;
+    padding: 60px;
+    height: 91.3vh;
+    width: 32%;
+    position: absolute;
+    z-index: 100;
+    top: 53px;
+    right: 0px;
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.imgBanner{
+    background-image: url(../img/personal.jpg);
+    width: 300px;
+    height: 200px;
+    background-size:cover;
+    background-position: center center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+/*         SECTION        */
+
+.section{
+    display: flex;
+    justify-content: space-evenly;
+    height: 400px;
+    width: 100%;
+    background: radial-gradient(ellipse at center, rgb(229, 229, 229), rgb(165, 165, 165), rgb(124, 124, 124), rgb(107, 107, 107));
+}
+
+.sectionLorem {
+    flex: 1;
+    max-width: 20%;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 7px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 10px; /* Añadido margen lateral para mejor separación */
+}
+
+.imgSection{
+    background-image: url(../img/trabajo\ 1.webp);
+    width: 257px;
+    height: 170px;
+    background-size:cover;
+    background-position: center center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.imgSection2{
+    background-image: url(../img/trabajo\ 2.jpg);
+    width: 257px;
+    height: 170px;
+    background-size:cover;
+    background-position: center center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.imgSection3{
+    background-image: url(../img/trabajo\ 3.jpg);
+    width: 257px;
+    height: 170px;
+    background-size:cover;
+    background-position: center center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+/*         FOOTER         */
+
+footer{
+    background: #a5a4a4;
+    padding-top: 5px;
+}
+
+.fcontainer-footer{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-contenedor2{
+    width: 33.3%;
+}
+
+.footer-contenedor3{
+    width: 33.3%;
+}
+
+h3{
+    font-size: 22px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.footer-contenedor2 p{
+    width: 190px;
+    margin: auto;
+    padding: 3px;
+    font-size: 15px;
+}
+
+.footer-contenedor2 ul{
+    text-align: center;
+}
+
+.lista{
+    padding: 0;
+}
+
+.lista li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 2px;
+    position: relative;
+    font-size: 15px;
+}
+
+.lista::before{
+    content: "";
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: .5s;
+}
+
+.lista li:hover::before{
+    width: 70px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #f18930;
+}
+.bottom-bar{
+    background: #f18930;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 5px;
+}
+
+.bottom-bar p{
+    color: #343434;
+    margin: 0;
+    font-size: 16px;
+}

@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+} 
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    background-image: url(../img/supermercado-640x360.jpg);
+    object-fit: contain; 
+    background-size: cover;
+    background-position: center center;
+}
+
+/*         NAV BAR         */
+
+.show{
+    display: flex !important;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    background-color: white;
+    position: relative;
+    width: 100%; 
+    z-index: 200;
+    top: 0; 
+}
+
+nav ul{ /*links de escritorio*/
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li > a{ /*Estilos para hipervinculos hijos - carro/login/fav */
+    display: block;
+    position: relative;
+    padding: 20px 15px 10px 15px;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li .link::before{ /*Efecto barra blanca abajo de los links*/
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+
+    background-color:black;
+}
+
+nav ul li .link:hover:before{ 
+    transform: scaleX(1);
+}
+
+nav .more{
+    display: none;
+}
+
+nav .menu{ /*Menu flotante oculto en el more cuando cambia resolucion*/
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    min-width: 200px;
+    margin-top: 54px;
+
+    background-color: black
+}
+
+nav .menu a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+nav .menu a:hover{
+    background-color: white;
+    color: black;
+}
+
+nav .mobil{ /*A partir de aca esta el estilo para el nav en modo mobil, se distingue por la clase .mobil*/
+    display: none;
+    width: 100%;
+}
+
+.contenedor{
+    display: flex; 
+    justify-content: space-between;
+}
+
+.contenedor-info{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); 
+    background-color:rgba(226, 223, 14, 0.973);
+    width: 30%;
+    height: 350px; 
+    border-radius: 3px;
+    margin: 10px;
+}
+ 
+#email {
+    margin-left: 17px;
+}
+ 
+#telefono {
+    margin-left: 1px;  
+} 
+ 
+#consulta {
+    margin-top: 4px; 
+}
+ 
+.contenedor-form {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); 
+    background-color:rgba(25, 245, 91, 0.973);  
+    width: 30%;
+    height: 350px;
+    border-radius: 3px;
+    margin: 10px;
+}
+
+.datos-mercado {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+} 
+
+/*         FOOTER         */
+
+footer{
+    background: #a5a4a4;
+    padding-top: 5px;
+}
+
+.fcontainer-footer{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-contenedor2{
+    width: 33.3%;
+}
+
+.footer-contenedor3{
+    width: 33.3%;
+}
+
+h3{
+    font-size: 22px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.footer-contenedor2 p{
+    width: 190px;
+    margin: auto;
+    padding: 3px;
+    font-size: 15px;
+}
+
+.footer-contenedor2 ul{
+    text-align: center;
+}
+
+.lista{
+    padding: 0;
+}
+
+.lista li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 2px;
+    position: relative;
+    font-size: 15px;
+}
+
+.lista::before{
+    content: "";
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: .5s;
+}
+
+.lista li:hover::before{
+    width: 70px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #f18930;
+} 
+.bottom-bar{
+    background: #f18930;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 5px;
+}
+
+.bottom-bar p{
+    color: #343434;
+    margin: 0;
+    font-size: 16px;
+}
+

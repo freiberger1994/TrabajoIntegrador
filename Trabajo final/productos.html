@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./src/css/productos.css">
+</head>
+<body>
+    <div id="main-cointainer">
+        <header>
+            <nav>
+                <div class="mobil">
+                    <div class="header">
+                        <button id="bmenu">
+                            <span class="material-symbols-outlined">menu</span>
+                        </button>
+                        <a href="#"><img src="../Trabajo final/src/img/sticker-png-vans-logo.png" alt="Logo Vans"></a>
+                        <div>
+                            <a href="#"><span class="material-symbols-outlined">shopping_cart</span></a>
+                            <a href="#"><span class="material-symbols-outlined">account_circle</span></a>
+                            <a href="#"><span class="material-symbols-outlined">favorite</span></a>
+                        </div>
+                    </div>
+                    
+                    <div class="links">
+                        <a href="./productos.html">Productos</a>
+                        <a href="#">Contacto</a>
+                        <a href="#">Sobre nosotros</a>
+                        <a href="#">Novedades</a>
+                        <a href="#">Ayuda</a>
+                        <a href="#">Comunidad</a>
+                    </div> 
+                </div>
+
+                <ul>
+                    <li><a href="./index.html"><span>S.M</span><span class="material-symbols-outlined">storefront</span></a></li>
+                    <li><a href="./productos.html" class = "link">Productos</a></li>
+                    <li><a href="./contacto.html" class = "link">Contacto</a></li>
+                    <li><a href="#" class = "link link-hide">Sobre nosotros</a></li>
+                    <li><a href="#" class = "link link-hide">Novedades</a></li>
+                    <li><a href="#" class = "link link-hide">Ayuda</a></li>
+                    <li><a href="#" class = "link link-hide">Comunidad</a></li>
+                    <li class="more"> 
+                        <a href="#" class="link" id="bmore">Mas opciones</a>
+                        <div class ="menu">
+                            <a href="#">Sobre nosotros</a>
+                            <a href="#">Novedades</a>
+                            <a href="#">Ayuda</a>
+                            <a href="#">Comunidad</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="#"><span class="material-symbols-outlined">shopping_cart</span></a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">account_circle</span></a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">favorite</span></a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="contenedor" id="contenedor">
+        <div>
+            <img src="./src/img/producto1.webp" alt="Yerba Playadito 1kg">
+            <div class="informacion">
+                <p>Yerba 1KG</p>
+                <p class="precio">$3699</p>
+                <input type="number" name="cant0" id="cant0" min="0" value="0">
+                <button class="botoncomprar" data-producto="0">Comprar</button>
+
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Producto agregado al carro de compras!</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div>
+            <img src="./src/img/producto2.webp" alt="Arroz dos hermanos 1kg">
+            <div class="informacion">
+                <p>Arroz 1KG</p>
+                <p class="precio">$3680</p>
+                <input type="number" name="cant1" id="cant1" min="0" value="0">
+                <button class="botoncomprar" data-producto="1">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="./src/img/producto3.webp" alt="Aceite cañuelas 1.5l">
+            <div class="informacion">
+                <p>Aceite 1.5L</p>
+                <p class="precio">$3199</p>
+                <input type="number" name="cant2" id="cant2" min="0" value="0">
+                <button class="botoncomprar" data-producto="2">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="./src/img/producto4.jpg" alt="Fideos Don Vicente 500gr">
+            <div class="informacion">
+                <p>Fideos 500GR</p>
+                <p class="precio">$1800</p>
+                <input type="number" name="cant3" id="cant3" min="0" value="0">
+                <button class="botoncomprar" data-producto="3">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="./src/img/producto5.webp" alt="Choclo Arcor 300gr">
+            <div class="informacion">
+                <p>Choclo 300GR</p>
+                <p class="precio">$1449</p>
+                <input type="number" name="cant4" id="cant4" min="0" value="0">
+                <button class="botoncomprar" data-producto="4">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="./src/img/producto6.webp" alt="Agua con gas Benedictino 2.5L">
+            <div class="informacion">
+                <p>Agua 2.5L</p>
+                <p class="precio">$7200</p>
+                <input type="number" name="cant5" id="cant5" min="0" value="0">
+                <button class="botoncomprar" data-producto="5">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="./src/img/producto7.jpg" alt="Coca Cola 500ml">
+            <div class="informacion">
+                <p>Gaseosa 500ml</p>
+                <p class="precio">$1350</p>
+                <input type="number" name="cant6" id="cant6" min="0" value="0">
+                <button class="botoncomprar" data-producto="6">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="./src/img/producto8.jpg" alt="Azucar Ledesma">
+            <div class="informacion">
+                <p>Azucar 500GR</p>
+                <p class="precio">$3280</p>
+                <input type="number" name="cant7" id="cant7" min="0" value="0">
+                <button class="botoncomprar" data-producto="7">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="./src/img/producto9.jpg" alt="Manteca la Serenisima">
+            <div class="informacion">
+                <p>Manteca 200GR</p>
+                <p class="precio">$2989</p>
+                <input type="number" name="cant8" id="cant8" min="0" value="0">
+                <button class="botoncomprar" data-producto="8">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="./src/img/producto10.png" alt="Harina Morixe 000 1KG">
+            <div class="informacion">
+                <p>Harina 000 1KG</p>
+                <p class="precio">$943</p>
+                <input type="number" name="cant9" id="cant9" min="0" value="0">
+                <button class="botoncomprar" data-producto="9">Comprar</button>
+            </div>
+        </div>
+    </div>
+    <div class="contenedorTotal">
+        <div class="total">
+            <p class="preciofinal">Total: $ <span id="total"></span></p>
+            <button class="finalizarCompra">Finalizar Compra</button>
+        </div>
+    </div>
+    <footer>
+        <div class="fcontainer-footer">
+            <div class="footer-contenedor2">
+                <h3>Contactanos</h3>
+                <p>Email: Info@example.com</p>
+                <p>Telefono: +121 545654 4545</p>
+                <p>Calle: Calle de ejemplo 123</p>
+            </div>
+            <div class="footer-contenedor3">
+                <h3>Links Rapidos</h3>
+                <ul class="lista">
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Sobre nosotros</a></li>
+                    <li><a href="">Servicios</a></li>
+                    <li><a href="">Productos</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 Supermercadito. Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="./src/js/productos.js"></script>
+</body>
+</html>
